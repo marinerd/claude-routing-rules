@@ -1,5 +1,5 @@
 # NAME: Claude - owner maintained
-# UPDATED: 2026-10-10
+# UPDATED: 2026-10-11
 # Nine domain families explicitly enabled by the owner.
 # Community provenance is retained in domain-catalog.json; routing is enabled.
 host-suffix, claude.ai, Claude
@@ -11,5 +11,16 @@ host-suffix, claudemcpcontent.com, Claude
 host-suffix, claude.dev, Claude
 host-suffix, claudemcpclient.com, Claude
 host-suffix, clau.de, Claude
-# Preserve the legacy exact analytics rule; do not expand shared-provider suffixes.
+# Verified exact service hosts; shared-provider suffixes are not expanded.
 host, cdn.usefathom.com, Claude
+host, o1158394.ingest.us.sentry.io, Claude
+host, http-intake.logs.us5.datadoghq.com, Claude
+host, browser-intake-us5-datadoghq.com, Claude
+host, widget.intercom.io, Claude
+host, api-iam.intercom.io, Claude
+host, static.intercomassets.com, Claude
+host, downloads.intercomcdn.com, Claude
+host, js.intercomcdn.com, Claude
+# Official inbound IP ranges; placed after hostname rules.
+ip-cidr, 160.79.104.0/23, Claude
+ip6-cidr, 2607:6bc0::/48, Claude
